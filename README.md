@@ -1,7 +1,6 @@
 # Portfolio-Landing-Page
 
 This is my first Responsive Landing page and it is about my coding skills and how what I was able to develop so far..it is just a beginnign a of hopefully a long journey :D. 
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 ## Description
 
@@ -21,5 +20,5 @@ This project was completed in digital collaboration with:
 - Chris-Eric Dagbo
 - Adama Sall
 
-##License
+## License
 MIT
