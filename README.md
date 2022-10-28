@@ -1,6 +1,6 @@
 # Portfolio-Landing-Page
 
-This is my first Responsive Landing page and it is about my coding skills and how what I was able to develop so far..it is just a beginnign a of hopefully a long journey :D. 
+This is my first Responsive Landing page and it is about my coding skills and how what I was able to develop so far..it is just a beginning a of hopefully a long journey :D. 
 
 ## Description
 
