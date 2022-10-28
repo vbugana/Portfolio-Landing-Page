@@ -20,5 +20,9 @@ This project was completed in digital collaboration with:
 - Chris-Eric Dagbo
 - Adama Sall
 
+## Version History
+
+0.1 Initial Release
+
 ## License
 MIT
