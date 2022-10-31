@@ -1,6 +1,6 @@
 # Portfolio-Landing-Page
 
-This is my first Responsive Landing page and it is about my coding skills and how what I was able to develop so far..it is just a beginning a of hopefully a long journey :D. 
+This is my first Responsive Landing page and it is about my coding skills and how what I was able to develop so far..it is just a beginning a of hopefully a long journey :joy:. 
 
 ## Description
 
@@ -11,7 +11,7 @@ This is my first Responsive Landing page and it is about my coding skills and ho
 * When images of the applications are clicked then the user is taken to that deployed application
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
-It should look like the template : ![portfolio demo](./images/01-css-challenge-demo.gif)
+It should look like the template : ![Alt Text](./images/01-css-challenge-demo.gif)
 
 ## Credits
   
