@@ -9,6 +9,30 @@ body {
   line-height: 1.5;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -20,4 +44,35 @@ h6 {
 
 p {
   margin: 0;
+}
+.hero-banner {
+  background-image: url("..images\02-hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.page-wrapper {
+
+}
+.page-section {
+
+}
+.page-section .contact{
+
+}
+a[href$='.css']::after {
+  content: '📝';
+  display: inline-block;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
 }
