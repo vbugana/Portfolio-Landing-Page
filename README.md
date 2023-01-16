@@ -25,8 +25,9 @@ This project was completed in digital collaboration with:
 ## Version History
 
 0.2 latest release
-[Have a look](https://github.com/vbugana/Portfolio-Landing-Page)
-[The repo](https://vbugana.github.io/Portfolio-Landing-Page/)
+- [Have a look](https://vbugana.github.io/Portfolio-Landing-Page/)
+- [The repo](https://github.com/vbugana/Portfolio-Landing-Page)
+
 
 ## License
 MIT
