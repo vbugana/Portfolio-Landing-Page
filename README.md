@@ -1,6 +1,6 @@
 # Portfolio-Landing-Page
 
-This is my first Responsive Landing page and it is about my coding skills and how what I was able to develop so far..it is just a beginning a of hopefully a long journey :joy:. 
+This is my first Responsive Landing page using HTML & CSS...It is an exercise to practive CSS with grid and flex functionality. 
 
 ## Description
 
@@ -24,7 +24,9 @@ This project was completed in digital collaboration with:
 
 ## Version History
 
-0.1 Initial Release---Nothing like the template so more to work :cry:
+0.2 latest release
+[Have a look](https://github.com/vbugana/Portfolio-Landing-Page)
+[The repo](https://vbugana.github.io/Portfolio-Landing-Page/)
 
 ## License
 MIT
