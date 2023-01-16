@@ -1,134 +1,252 @@
-html, 
-body { 
-  position:fixed; 
-  top:0; 
-  bottom:0; 
-  left:0; 
-  right:0; 
-} 
-
-.wrapper {
-  background-color: #fff;
-  color: #444;
+* {
+  box-sizing: border-box;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-   "box header"
-   "box sidebar"
-   "box sidebar2"
-   "box content"     
-   "box content1"
+:root {
+  --dark: #333333;
+  --light: #f6f6f6;
+  --aquagreen: #AFF0F0;
+  --light-gray: #cccdce;
 }
+
 body {
+  display: inline-block;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
   line-height: 1.5;
 }
+
+/* Navbar and header */
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  background-image: url("./images/02-hero-bg.jpg");
-  color: #fff;
-  grid-area: header;
-  width: 100%;
-  height: 30%;
+  background-color: var(--dark);
+  color: gray;
 }
-header ul{
-  float:right;
-  padding: 0;
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-header ul li{
-  display: inline;
-  display:inline-block; 
-  padding:0px 25px; 
-  height:60px;
-  line-height:60px; 
-  text-align:center;
-  font-family: 'Roboto Slab', serif; 
-  text-decoration:none;
+
+p {
+  margin: 10px;
 }
-.sidebar {
-    grid-area: sidebar;
-  }
-.sidebar1 {
-    grid-area: sidebar1;
-  }
-.sidebar2 {
-    grid-area: sidebar2;
-  }
-.content {
-    grid-area: content;
-  }
-.content1 {
-    grid-area: content1;
-  }
-.gallery {
-    --n: 3; /* number of rows*/
-    --m: 2; /* number of columns */
-    --g: 10px;  /* control the gap */
-    --f: 1.2;   /* control the scale factor */
-    display: grid;
-    gap: var(--g);
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: repeat(var(--m),auto);
-  }
-  
-.gallery > img {
-    width: 0;
-    height: 0;
-    min-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    filter: grayscale(80%);
-    transition: .35s linear;
-  }
-  
-.gallery img:hover{
-    filter: grayscale(0);
-    width:  calc(100vh*var(--f)/var(--n));
-    height: calc(100vw*var(--f)/var(--m));
-  }
-  
-  
-body {
-    margin: 0;
-    background: #60c4ff;
-  } 
 
-  @media only screen and (min-width: 500px)  {
-  .wrapper {
+li {
+  list-style: none;
+}
 
-    grid-template-columns: 20% auto;
-    grid-template-areas:
-    "header   header"
-    "sidebar  content"
-    "sidebar1 gallery"
-    "sidebar2 content1"
-    ;
-  }
-  }
 
-  @media only screen and (min-width: 600px)   {
-    .wrapper {
-      grid-gap: 20px;
-      grid-template-columns: 120px auto 120px;
-      grid-template-areas:
-      "header  header  header"
-      "sidebar content content "
-      "sidebar1 gallery gallery"
-      "sidebar2 content1 content1";
-      max-width: 600px;
-    }
-  }
+ul a {
+  color: var(--aquagreen);
+  margin: 5px;
+
+}
+
+ol a {
+  color: var(--outer-space)
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin: 50px;
+}
+
+h1 {
+  font-size: 250%;
+  width: 25%;
+  background-color: var(--aquagreen);
+  text-align: center;
+  line-height: -20px;
+  padding: 10px;
+}
+
+/* hero-banner section */
+
+
+#hero-banner {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: 100%;
+}
+
+.simply-highlighted {
+  background-color:var(--aquagreen);
+  padding: 10px;
+}
+ /* Titles */
+
+h2 {
+  font-size: 25px;
+  justify-content: left;
+  align-content: top;
+  padding-right: 10px;
+  margin: 30px;
+  color: dimgrey;
+
+}
+
+h3 {
+  font-size: 20px;
+  background-color: var(--aquagreen);
+  text-align: center;
+  margin: -10px;
+}
+
+h4 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-bottom: 10px;
+  background-color: var(--aquagreen);
+  padding-top: 20px;
+}
+
+/* container  */
+ 
+.page-wrapper {
+  grid-template-columns: fit-content, 10% 40% 10%;
+  display: grid;
+  gap: 10px;
+  width: 75%;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 70px;
+  position: relative;
+  grid-template-areas:
+    "about text-about text-about"
+    "work work-contain1 work-contain1"
+    "work work-contain2 work-contain3"
+    "work work-contain4 work-contain5"
+    "contact contact1 contact1";
+ 
+}
+ 
+/* child container */
+ 
+.about {
+  grid-area: about;
+  border-right: 4px solid #3333;
+  margin: 5px;
+}
+ 
+.text-about {
+  grid-area: text-about;
+  position: relative;
+  margin: 5px;
+}
+ 
+.work {
+  grid-area: work;
+  border-right: 4px solid #3333;
+  margin: 5px;
+ 
+}
+ 
+.work-contain1 {
+  display: flex;
+  height: 250px;
+  align-items: flex-end;
+  grid-area: work-contain1;
+  background-color: cadetblue;
+  background-size: 100%;
+  margin: 5px;
+  border: 6px solid var(--aquagreen);
+}
+ 
+.work-contain1:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.865), 0 1px 2px rgba(0, 0, 0, 0.689);
+  background-color: #0099cc;
+}
+ 
+.work-contain2 {
+  display: flex;
+  height: 150px;
+  align-items: flex-end;
+  grid-area: work-contain2;
+  background-size: 100%;
+  background-image: url(../images/02-portfolio-1.jpg);
+  margin: 5px;
+  border: 6px solid var(--aquagreen);
+ 
+}
+ 
+.work-contain2:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.865), 0 1px 2px rgba(0, 0, 0, 0.689);
+  background-color: #0099cc;
+
+}
+ 
+.work-contain3 {
+  display: flex;
+  height: 150px;
+  align-items: flex-end;
+  grid-area: work-contain3;
+  background-size: 100%;
+  margin: 5px;
+  border: 6px solid var(--aquagreen);
+
+}
+ 
+ 
+.work-contain3:hover {
+  background-image: url(../images/02-portfolio-2.jpg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.865), 0 1px 2px rgba(0, 0, 0, 0.689);
+}
+ 
+.work-contain4 {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  grid-area: work-contain4;
+  background-size: 100%;
+  background: url(../images/02-portfolio-4.jpg);
+  margin: 5px;
+  border: 6px solid var(--aquagreen);
+ 
+}
+ 
+.work-contain4:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.865), 0 1px 2px rgba(0, 0, 0, 0.689);
+}
+ 
+.work-contain5 {
+  height: 150px;
+  grid-area: work-contain5;
+  display: flex;
+  align-items: flex-end;
+  background-size: 100%;
+  background: url(../images/02-run-buddy.jpg);
+  margin: 5px;
+  border: 6px solid var(--aquagreen);
+ 
+}
+ 
+.work-contain5:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.865), 0 1px 2px rgba(0, 0, 0, 0.689);
+}
+ 
+.contact {
+  height: 70px;
+  grid-area: contact;
+  border-right: 4px solid #3333;
+  margin: 5px;
+}
+ 
+.contact1 {
+  grid-area: contact1;
+  display: flex;
+  justify-content: space-between;
+}
